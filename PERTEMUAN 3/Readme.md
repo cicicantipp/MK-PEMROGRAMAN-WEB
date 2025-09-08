@@ -25,7 +25,7 @@
       padding: 0;
       background: linear-gradient(135deg, #000000, #000101);
     }
-    ```
+```
     Bagian ini mengatur tampilan seluruh halaman.
     Huruf memakai Arial atau font cadangan sans-serif.
     Margin dan padding dihapus supaya rapi.
@@ -68,3 +68,40 @@ Background pink cerah.
 Teks berwarna hitam.
 Padding 20px memberi ruang di dalam.
 text-align:center; membuat isi rata tengah.
+
+5. Foto Profil
+  ```html
+  .sidebar img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 10px;
+  animation: bounce 3s infinite;
+}
+  @keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+```
+Foto profil ditampilkan bulat dan bergerak.
+Ukuran 130px × 130px.
+border-radius:50% menjadikannya bulat.
+border:4px solid white; memberi garis putih.
+animation:bounce; membuat foto memantul naik turun setiap 3 detik.
+
+6. Nama dan Motto
+```html
+<h2>SUSI</h2>
+<p class="motto">"Ngoding itu seni, error itu tradisi"</p>
+.motto {
+  font-style: italic;
+  font-size: 14px;
+  margin: 10px 0 20px;
+  color: #222;
+}
+```
+Nama besar ditampilkan dengan h2 dan motto dengan p.
+Teks motto miring, kecil, warna abu gelap, dan diberi jarak atas bawah.
+
+  
