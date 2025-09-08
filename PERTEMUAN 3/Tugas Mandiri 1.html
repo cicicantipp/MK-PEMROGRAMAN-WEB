@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form KTP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      padding: 20px;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+      color: #d63384;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #d63384;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #a61c65;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Form Pengisian KTP</h2>
+    <form>
+      <label>Nama Lengkap:</label>
+      <input type="text" name="nama">
+
+      <label>Tempat / Tanggal Lahir:</label>
+      <input type="text" name="ttl">
+
+      <label>Jenis Kelamin:</label>
+      <select name="jk">
+        <option>Laki-laki</option>
+        <option>Perempuan</option>
+      </select>
+
+      <label>Alamat:</label>
+      <input type="text" name="alamat">
+
+      <label>Agama:</label>
+      <select name="agama">
+        <option>Islam</option>
+        <option>Kristen</option>
+        <option>Hindu</option>
+        <option>Budha</option>
+        <option>Konghucu</option>
+      </select>
+
+      <label>Status Perkawinan:</label>
+      <select name="status">
+        <option>Belum Kawin</option>
+        <option>Kawin</option>
+      </select>
+
+      <button type="submit">Simpan</button>
+    </form>
+  </div>
+</body>
+</html>
