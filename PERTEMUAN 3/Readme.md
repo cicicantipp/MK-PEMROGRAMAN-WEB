@@ -26,22 +26,22 @@
       background: linear-gradient(135deg, #000000, #000101);
     }
 ```
-    Bagian ini mengatur tampilan seluruh halaman.
-    Huruf memakai Arial atau font cadangan sans-serif.
-    Margin dan padding dihapus supaya rapi.
-    Background dibuat gradasi hitam ke hitam pekat dengan sudut 135°.
+Bagian ini mengatur tampilan seluruh halaman.
+Huruf memakai Arial atau font cadangan sans-serif.
+Margin dan padding dihapus supaya rapi.
+Background dibuat gradasi hitam ke hitam pekat dengan sudut 135°.
 
 3. Kontainer Utama
   ```html
   .container {
-  display: flex;
-  max-width: 900px;
-  margin: 30px auto;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  overflow: hidden;
-}
+      display: flex;
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
 ```
 Bagian ini membuat kotak utama berisi sidebar dan main.
 display:flex; membagi halaman jadi dua kolom.
@@ -55,12 +55,13 @@ overflow:hidden; mencegah isi keluar dari kotak.
 4. Sidebar
  ```html
  .sidebar {
-  width: 35%;
-  background: #ff0f93;
-  color: rgb(4, 0, 0);
-  padding: 20px;
-  text-align: center;
-}
+      width: 35%;
+      background: #ff0f93;
+      color: rgb(4, 0, 0);
+      padding: 20px;
+      text-align: center;
+    }    
+   
 ```
 Sidebar adalah kolom kiri.
 Lebarnya 35% dari container.
@@ -72,17 +73,17 @@ text-align:center; membuat isi rata tengah.
 5. Foto Profil
   ```html
   .sidebar img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 4px solid white;
-  margin-bottom: 10px;
-  animation: bounce 3s infinite;
-}
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: 4px solid white;
+        margin-bottom: 10px;
+        animation: bounce 3s infinite;
+    }
   @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
-}
+  }
 ```
 Foto profil ditampilkan bulat dan bergerak.
 Ukuran 130px × 130px.
@@ -103,5 +104,80 @@ animation:bounce; membuat foto memantul naik turun setiap 3 detik.
 ```
 Nama besar ditampilkan dengan h2 dan motto dengan p.
 Teks motto miring, kecil, warna abu gelap, dan diberi jarak atas bawah.
+
+7. Bagian Kontak dan Hobi
+```html
+ <!--HTML-->
+    <div class="contact">
+    <h3>Kontak</h3>
+    <ul>
+        <li>📧 iniciciiww@gmail.com</li>
+        <li>📱 0813-5428-1882</li>
+    </ul>
+    </div>
+
+ <!--CSS-->
+    .contact ul li, .hobi ul li {
+        margin: 6px 0;
+        padding: 6px 10px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.4);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .contact ul li:hover, .hobi ul li:hover {
+        background: #c60d73;
+        color: #000;
+        transform: translateX(6px);
+        box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+```
+Kontak berisi daftar email dan nomor HP. Hobi juga sama strukturnya.
+Daftar dibuat dalam kotak dengan latar transparan. Saat diarahkan mouse (hover), warna berubah ke pink gelap, teks jadi hitam, bergeser sedikit ke kanan, dan ada bayangan.
+
+8. Bagian Sosial Media
+```html
+    <!-- HTML -->
+        <div class="social-section">
+            <h3>Sosial Media</h3>
+            <div class="social-buttons">
+            <a class="instagram" href="https://www.instagram.com/ciciianddays" target="_blank">Instagram</a>
+            <a class="github" href="https://github.com/cicicantipp" target="_blank">GitHub</a>
+            <a class="tiktok" href="https://www.tiktok.com/@iniciciwww" target="_blank">TikTok</a>
+            </div>
+        </div>
+        </div>
+    <!-- CSS -->
+    .social-buttons a {
+        text-decoration: none;
+        padding: 8px 18px;
+        border-radius: 25px;
+        font-weight: bold;
+        color: white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .social-buttons a:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .instagram { background: linear-gradient(...); }
+    .github { background: #333; }
+    .tiktok { background: linear-gradient(...); }
+```
+<!-- HTML -->
+div.social-section → membungkus keseluruhan bagian sosial media. Memberikan konteks dan memudahkan styling.
+h3 → judul seksi, jelas memberi tahu pengguna ini adalah bagian sosial media.
+div.social-buttons → container untuk tombol/link sosial media.
+a → setiap link ke platform sosial media, memiliki class spesifik (instagram, github, tiktok) untuk styling individual.
+target="_blank" → memastikan link terbuka di tab baru, bagus untuk UX agar pengunjung tidak meninggalkan halaman utama.
+<!-- CSS -->
+text-decoration: none; → menghapus garis bawah default pada link, membuat tampilannya lebih mirip tombol.
+padding: 8px 18px; → memberi ruang di dalam tombol agar klik lebih nyaman.
+border-radius: 25px; → tombol berbentuk pill, tampilannya modern dan menarik.
+font-weight: bold; → teks lebih menonjol, mudah dibaca.
+color: white; → kontras dengan latar belakang tombol.
+transition → animasi halus saat tombol dihover, memberikan kesan interaktif.
+
 
   
