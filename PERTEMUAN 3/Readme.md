@@ -1,27 +1,15 @@
 # ANALISIS BIOGRAFI
 1. Bagian Awal HTML
-```html
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio CiciCantik</title>
-  <style>
-  ```
-  Bagian ini adalah deklarasi dokumen dan pengaturan dasar.
-
-  !DOCTYPE html: menandakan bahwa dokumen ini HTML5.
-
-  lang="id" artinya bahasa utama halaman adalah Indonesia.
-
-  meta charset="UTF-8" mengatur encoding supaya karakter Indonesia muncul benar.
-
-  meta name="viewport"... membuat halaman responsif di HP.
-
-  title adalah judul tab browser.
-
-  style dipakai untuk menaruh CSS langsung dalam file.
+    ```html
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio CiciCantik</title>
+    <style>
+    ```
+    Bagian awal kode ini adalah deklarasi dokumen dan pengaturan dasar. !DOCTYPE html menandakan bahwa dokumen ini menggunakan HTML5. Atribut lang="id" menunjukkan bahwa bahasa utama halaman adalah Bahasa Indonesia. Tag meta charset="UTF-8" digunakan untuk mengatur encoding karakter agar karakter Indonesia dapat tampil dengan benar. Selanjutnya, meta name="viewport" content="width=device-width, initial-scale=1.0" membuat halaman menjadi responsif dan menyesuaikan tampilan di berbagai perangkat, termasuk HP. Tag title menentukan judul yang muncul di tab browser, sedangkan style digunakan untuk menaruh kode CSS langsung di dalam file HTML.
 
   
 2. CSS Body
@@ -33,10 +21,7 @@
       background: linear-gradient(135deg, #000000, #000101);
     }
 ```
-Bagian ini mengatur tampilan seluruh halaman.
-Huruf memakai Arial atau font cadangan sans-serif.
-Margin dan padding dihapus supaya rapi.
-Background dibuat gradasi hitam ke hitam pekat dengan sudut 135°.
+    Bagian kode CSS ini mengatur tampilan keseluruhan halaman melalui tag body. Properti font-family: Arial, sans-serif; menentukan jenis huruf, yaitu Arial, dan jika Arial tidak tersedia, digunakan font sans-serif. margin: 0; dan padding: 0; berfungsi untuk menghapus jarak default dari tepi browser dan isi elemen body, sehingga halaman terlihat rapi. Sedangkan background: linear-gradient(135deg, #000000, #000101); memberi latar belakang gradasi gelap dari hitam ke hitam lebih gelap dengan sudut 135 derajat, sehingga halaman terlihat modern dan elegan.
 
 3. Kontainer Utama
   ```html
@@ -50,39 +35,19 @@ Background dibuat gradasi hitam ke hitam pekat dengan sudut 135°.
       overflow: hidden;
     }
 ```
-Bagian ini membuat kotak utama berisi sidebar dan main.
-
-display:flex; membagi halaman jadi dua kolom.
-
-max-width:900px; membatasi lebar maksimal.
-
-margin:30px auto; membuatnya rata tengah dengan jarak atas 30px.
-
-background:white; memberi latar putih.
-
-border-radius:10px; membuat sudut membulat.
-
-box-shadow; memberi efek bayangan.
-
-overflow:hidden; mencegah isi keluar dari kotak.
+    .container adalah flex container yang membungkus seluruh isi halaman. Properti display: flex; membagi halaman menjadi dua kolom, yakni sidebar dan main content. max-width: 900px; membatasi lebar halaman agar tetap nyaman dibaca. margin: 30px auto; memusatkan container secara horizontal, sedangkan background: white;, border-radius: 10px;, dan box-shadow: 0 5px 15px rgba(0,0,0,0.2); memberi tampilan modern dengan efek bayangan dan sudut membulat. overflow: hidden; mencegah konten meluber keluar container.
 
 4. Sidebar
  ```html
- .sidebar {
+    .sidebar {
       width: 35%;
       background: #ff0f93;
       color: rgb(4, 0, 0);
       padding: 20px;
       text-align: center;
-    }    
-   
+    }       
 ```
-Sidebar adalah kolom kiri.
-Lebarnya 35% dari container.
-Background pink cerah.
-Teks berwarna hitam.
-Padding 20px memberi ruang di dalam.
-text-align:center; membuat isi rata tengah.
+    .sidebar adalah bagian kiri halaman yang menampilkan profil pengguna. Lebarnya 35% dari container. background: #ff0f93; memberi warna pink cerah, color: rgb(4, 0, 0); memberi warna teks gelap, padding: 20px; memberi jarak isi, dan text-align: center; membuat semua konten berada di tengah.
 
 5. Foto Profil
   ```html
@@ -99,65 +64,61 @@ text-align:center; membuat isi rata tengah.
   50% { transform: translateY(-8px); }
   }
 ```
-Foto profil ditampilkan bulat dan bergerak.
-
-Ukuran 130px × 130px.
-
-border-radius:50% menjadikannya bulat.
-
-border:4px solid white; memberi garis putih.
-
-animation:bounce; membuat foto memantul naik turun setiap 3 detik.
+    .sidebar img mengatur foto profil menjadi bulat dengan border-radius: 50%;, ukuran 130x130px, dan diberi border putih. Animasi bounce membuat foto bergerak naik-turun setiap 3 detik untuk memberi efek menarik.
 
 
 6. Nama dan Motto
-```html
-<h2>SUSI</h2>
-<p class="motto">"Ngoding itu seni, error itu tradisi"</p>
-.motto {
-  font-style: italic;
-  font-size: 14px;
-  margin: 10px 0 20px;
-  color: #222;
-}
-```
-Nama besar ditampilkan dengan h2 dan motto dengan p.
-Teks motto miring, kecil, warna abu gelap, dan diberi jarak atas bawah.
+    ```html
+        <h2>SUSI</h2>
+        <p class="motto">"Ngoding itu seni, error itu tradisi"</p>
+        .motto {
+            font-style: italic;
+            font-size: 14px;
+            margin: 10px 0 20px;
+            color: #222;
+        }
+    ```
+    .sidebar h2 menampilkan nama pengguna dengan margin rapi. .motto menampilkan kutipan/moto dengan font italic, ukuran kecil, dan warna gelap agar kontras dengan background pink.
 
 7. Bagian Kontak dan Hobi
-```html
- <!--HTML-->
-    <div class="contact">
-    <h3>Kontak</h3>
-    <ul>
-        <li>📧 iniciciiww@gmail.com</li>
-        <li>📱 0813-5428-1882</li>
-    </ul>
-    </div>
+    ```html
+        <div class="contact">
+        <h3>Kontak</h3>
+        <ul>
+            <li>📧 iniciciiww@gmail.com</li>
+            <li>📱 0813-5428-1882</li>
+        </ul>
+        </div>
 
- <!--CSS-->
-    .contact ul li, .hobi ul li {
-        margin: 6px 0;
-        padding: 6px 10px;
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.4);
-        transition: all 0.3s ease;
-        cursor: pointer;
-    }
+        <div class="hobi">
+            <h3>Hobi</h3>
+            <ul>
+            <li>📚 Membaca</li>
+            <li>🏃 Olahraga</li>
+            </ul>
+        </div>
 
-    .contact ul li:hover, .hobi ul li:hover {
-        background: #c60d73;
-        color: #000;
-        transform: translateX(6px);
-        box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-    }
-```
-Kontak berisi daftar email dan nomor HP. Hobi juga sama strukturnya.
-Daftar dibuat dalam kotak dengan latar transparan. Saat diarahkan mouse (hover), warna berubah ke pink gelap, teks jadi hitam, bergeser sedikit ke kanan, dan ada bayangan.
+        .contact ul li, .hobi ul li {
+            margin: 6px 0;
+            padding: 6px 10px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .contact ul li:hover, .hobi ul li:hover {
+            background: #c60d73;
+            color: #000;
+            transform: translateX(6px);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+    ```
+    Memanggil css dengan class,.contact dan .hobi menampilkan daftar kontak dan hobi secara rapi. List diatur tanpa bullet (list-style: none;), dengan padding dan margin minimal. Hover effect membuat elemen berubah warna, pindah sedikit ke kanan, dan menambahkan bayangan, sehingga interaktif.
 
 8. Bagian Sosial Media
 ```html
-    <!-- HTML -->
+    <!-- Memanggil css dengan class -->
         <div class="social-section">
             <h3>Sosial Media</h3>
             <div class="social-buttons">
@@ -168,57 +129,47 @@ Daftar dibuat dalam kotak dengan latar transparan. Saat diarahkan mouse (hover),
         </div>
         </div>
     <!-- CSS -->
+    .social-section {
+      margin-top: 25px;
+      text-align: center;
+    }
+    .social-section h3 {
+      color: #ffd700;
+      margin-bottom: 15px;
+    }
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
     .social-buttons a {
-        text-decoration: none;
-        padding: 8px 18px;
-        border-radius: 25px;
-        font-weight: bold;
-        color: white;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 25px;
+      font-weight: bold;
+      color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .social-buttons a:hover {
-        transform: scale(1.1);
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
-    .instagram { background: linear-gradient(...); }
+    .instagram { background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #b62121); }
     .github { background: #333; }
-    .tiktok { background: linear-gradient(...); }
+    .tiktok { background: linear-gradient(45deg, #69C9D0, #EE1D52, #000000); }
 ```
-<!-- HTML -->
-div.social-section → membungkus keseluruhan bagian sosial media. Memberikan konteks dan memudahkan styling.
 
-h3 → judul seksi, jelas memberi tahu pengguna ini adalah bagian sosial media.
-
-div.social-buttons → container untuk tombol/link sosial media.
-
-a → setiap link ke platform sosial media, memiliki class spesifik (instagram, github, tiktok) untuk styling individual.
-
-target="_blank" → memastikan link terbuka di tab baru, bagus untuk UX agar pengunjung tidak meninggalkan halaman utama.
-<!-- CSS -->
-text-decoration: none; → menghapus garis bawah default pada link, membuat tampilannya lebih mirip tombol.
-
-padding: 8px 18px; → memberi ruang di dalam tombol agar klik lebih nyaman.
-
-border-radius: 25px; → tombol berbentuk pill, tampilannya modern dan menarik.
-
-font-weight: bold; → teks lebih menonjol, mudah dibaca.
-
-color: white; → kontras dengan latar belakang tombol.
-
-transition → animasi halus saat tombol dihover, memberikan kesan interaktif.
+    Bagian .social-section menampilkan tombol sosial media seperti Instagram, GitHub, dan TikTok. Properti display: flex; dan justify-content: center; membuat tombol sejajar secara horizontal dan berada di tengah, gap: 15px; memberi jarak antar tombol. Setiap tombol memiliki warna khas platform menggunakan background, misalnya Instagram memakai gradasi warna pelangi, GitHub hitam, dan TikTok gradasi biru-merah-hitam. Hover effect membuat tombol memperbesar sedikit (scale) dan memberi bayangan, sehingga terasa interaktif saat diklik. Tombol ini juga menggunakan border-radius: 25px; agar tampak bulat dan modern.
 
 9. Main Content (Bagian Kanan)
-```htm;
-   .main {
-        width: 65%;
-        padding: 20px;
-    }
-```
-Selector .main digunakan untuk membungkus konten utama, kemungkinan besar adalah container atau wrapper halaman.
-
-width: 65%; → membuat elemen .main hanya mengambil 65% dari lebar elemen induknya, sehingga memberikan margin kiri dan kanan otomatis jika tidak diatur float, sehingga terlihat lebih rapi dan fokus di tengah halaman.
-
-padding: 20px; → menambahkan ruang di dalam elemen .main, sehingga konten tidak menempel ke tepi elemen. Ini meningkatkan keterbacaan dan estetika halaman.
+ ```htm;
+    .main {
+            width: 65%;
+            padding: 20px;
+        }
+```    
+    .main adalah bagian kanan halaman yang menampilkan informasi detail pengguna, termasuk tentang diri sendiri, data pribadi, dan pendidikan. Lebarnya 65% dari container dan diberi padding 20px agar teks tidak menempel ke tepi.
 
 ```html
     .main h3 {
@@ -227,22 +178,14 @@ padding: 20px; → menambahkan ruang di dalam elemen .main, sehingga konten tida
         color: #ff1493;
     }
 ```
-Selector .main h3 menargetkan semua elemen h3 di dalam elemen dengan class .main.
-
-border-bottom: 2px solid #ff69b4; → menambahkan garis bawah tebal 2px berwarna pink (#ff69b4). Garis ini memberi penekanan visual, menandai judul sub-bagian secara jelas.
-
-padding-bottom: 5px; → memberi jarak antara teks dan garis bawah, sehingga tidak menempel langsung ke border. Ini membuat tampilan lebih seimbang dan profesional.
-
-color: #ff1493; → mengubah warna teks menjadi pink cerah (#ff1493), sesuai dengan tema warna garis bawah. Memberikan konsistensi visual dan menarik perhatian pembaca ke judul.
+    .main h3 digunakan untuk menampilkan judul tiap bagian seperti "Tentang Saya", "Data Pribadi", dan "Pendidikan". Properti border-bottom: 2px solid #ff69b4; menambahkan garis bawah berwarna pink untuk memberi penekanan, padding-bottom: 5px; memberi jarak antara teks dan garis, dan color: #ff1493; memberi warna teks pink tua agar judul lebih menonjol. Hal ini memudahkan pembaca membedakan tiap section secara visual.
 
 ```html
     .section {
         margin-bottom: 20px;
     }
 ```
-Selector .section kemungkinan digunakan untuk membungkus setiap bagian/sub-bagian konten.
-
-margin-bottom: 20px; → memberi jarak vertikal antara satu .section dengan section berikutnya. Ini membantu membuat layout tidak terasa padat dan lebih nyaman untuk dibaca.
+    .section memberi jarak antar bagian dengan margin-bottom: 20px; agar setiap blok informasi tidak terlalu rapat dan lebih nyaman dibaca. Isi section berupa paragraf atau list yang menjelaskan informasi tentang pengguna, termasuk riwayat pendidikan, alamat, dan deskripsi singkat tentang minat serta tujuan pengguna. Struktur ini membuat halaman portofolio lebih terstruktur, rapi, dan mudah dipahami.
 
 10. Isi Main Content
 ```html
@@ -258,12 +201,9 @@ margin-bottom: 20px; → memberi jarak vertikal antara satu .section dengan sect
         </p>
       </div>
 ```
-div.main → container utama untuk bagian ini. Memberikan batas ruang, padding, dan kemungkinan styling global (misal background, shadow). Ini membuat konten terlihat fokus dan rapi.
-
+div.main → memanggil css "main" dengan class.
 div.section → membungkus sub-bagian "Tentang Saya", memudahkan pemberian jarak antar section lain jika ada. Menjadi modular untuk pengembangan halaman lebih lanjut.
-
 h3 → judul sub-bagian, jelas memberi tahu pembaca bahwa bagian ini adalah tentang profil diri. Bisa distyling untuk menonjolkan teks dan memberikan garis bawah.
-
 p → paragraf utama berisi deskripsi tentang diri sendiri. Memberikan informasi personal, latar belakang pendidikan, ketertarikan, dan tujuan akademik/profesional.
 
 ```html
@@ -277,12 +217,9 @@ p → paragraf utama berisi deskripsi tentang diri sendiri. Memberikan informasi
         <p><b>Alamat        :</b> Jl.Poros Barua, Kab.Bantaeng, Sulawesi Selatan</p>
       </div>
 ```
-div.section → membungkus seluruh konten data pribadi, sehingga memudahkan pengaturan jarak (margin) antar bagian lain di halaman.
-
+div.section → memanggil css "section" dengan class.
 h3 → judul bagian, memberi konteks bahwa konten di bawahnya adalah informasi pribadi. Dengan styling CSS sebelumnya, judul ini akan menonjol dengan garis bawah pink (#ff69b4) dan teks berwarna pink cerah (#ff1493).
-
 Setiap p → menampilkan item data pribadi, seperti Nama, TTL, Jenis Kelamin, Status, dan Alamat.
-
 b → membuat label (misal: “Nama:”) tebal agar jelas membedakan antara label dan isinya.
 
 ```html
@@ -294,11 +231,8 @@ b → membuat label (misal: “Nama:”) tebal agar jelas membedakan antara labe
         <p><b>2021 - 2024:</b> SMAN 4 Bantaeng</p>
      </div>
 ```      
-div.section → membungkus seluruh informasi pendidikan, sehingga memudahkan pengaturan jarak (margin) antar section lain di halaman.
-
+div.section → memanggil css "section" dengan class.
 h3 → judul section, memberi konteks bahwa konten di bawahnya adalah riwayat pendidikan. Dengan styling CSS sebelumnya, judul ini akan menonjol dengan garis bawah pink dan teks berwarna pink cerah.
-
 Setiap p → menampilkan jenjang pendidikan beserta tahun, misalnya SD, MTS, dan SMA.
-
 b → membuat tahun pendidikan tebal agar lebih menonjol dan mudah dibaca, memisahkan label (tahun) dengan nama sekolah.git
   
