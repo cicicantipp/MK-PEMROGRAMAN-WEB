@@ -1,6 +1,6 @@
 # ANALISIS BIOGRAFI
 1. Bagian Awal HTML
-    ```html
+```html
     <!DOCTYPE html>
     <html lang="id">
     <head>
@@ -8,25 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio CiciCantik</title>
     <style>
-    ```
+```
+
 Bagian awal kode ini adalah deklarasi dokumen dan pengaturan dasar. !DOCTYPE html menandakan bahwa dokumen ini menggunakan HTML5. Atribut lang="id" menunjukkan bahwa bahasa utama halaman adalah Bahasa Indonesia. Tag meta charset="UTF-8" digunakan untuk mengatur encoding karakter agar karakter Indonesia dapat tampil dengan benar. Selanjutnya, meta name="viewport" content="width=device-width, initial-scale=1.0" membuat halaman menjadi responsif dan menyesuaikan tampilan di berbagai perangkat, termasuk HP. Tag title menentukan judul yang muncul di tab browser, sedangkan style digunakan untuk menaruh kode CSS langsung di dalam file HTML.
 
   
 2. CSS Body
-  ```html
+```html
   body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background: linear-gradient(135deg, #000000, #000101);
     }
-    ```
+```
 
 Bagian kode CSS ini mengatur tampilan keseluruhan halaman melalui tag body. Properti font-family: Arial, sans-serif; menentukan jenis huruf, yaitu Arial, dan jika Arial tidak tersedia, digunakan font sans-serif. margin: 0; dan padding: 0; berfungsi untuk menghapus jarak default dari tepi browser dan isi elemen body, sehingga halaman terlihat rapi. Sedangkan background: linear-gradient(135deg, #000000, #000101); memberi latar belakang gradasi gelap dari hitam ke hitam lebih gelap dengan sudut 135 derajat, sehingga halaman terlihat modern dan elegan.
 
 3. Kontainer Utama
   ```html
-  .container {
+    .container {
       display: flex;
       max-width: 900px;
       margin: 30px auto;
@@ -35,7 +36,7 @@ Bagian kode CSS ini mengatur tampilan keseluruhan halaman melalui tag body. Prop
       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
       overflow: hidden;
     }
-    ```
+```
 
 .container adalah flex container yang membungkus seluruh isi halaman. Properti display: flex; membagi halaman menjadi dua kolom, yakni sidebar dan main content. max-width: 900px; membatasi lebar halaman agar tetap nyaman dibaca. margin: 30px auto; memusatkan container secara horizontal, sedangkan background: white;, border-radius: 10px;, dan box-shadow: 0 5px 15px rgba(0,0,0,0.2); memberi tampilan modern dengan efek bayangan dan sudut membulat. overflow: hidden; mencegah konten meluber keluar container.
 
@@ -48,12 +49,12 @@ Bagian kode CSS ini mengatur tampilan keseluruhan halaman melalui tag body. Prop
       padding: 20px;
       text-align: center;
     }       
-    ```
+```
      
 .sidebar adalah bagian kiri halaman yang menampilkan profil pengguna. Lebarnya 35% dari container. background: #ff0f93; memberi warna pink cerah, color: rgb(4, 0, 0); memberi warna teks gelap, padding: 20px; memberi jarak isi, dan text-align: center; membuat semua konten berada di tengah.
 
 5. Foto Profil
-  ```html
+```html
   .sidebar img {
         width: 130px;
         height: 130px;
@@ -65,14 +66,14 @@ Bagian kode CSS ini mengatur tampilan keseluruhan halaman melalui tag body. Prop
         @keyframes bounce {
         0%, 100% { transform: translateY(0); }
         50% { transform: translateY(-8px); }
-        }
-    ```
+    }
+```
 
 .sidebar img mengatur foto profil menjadi bulat dengan border-radius: 50%;, ukuran 130x130px, dan diberi border putih. Animasi bounce membuat foto bergerak naik-turun setiap 3 detik untuk memberi efek menarik.
 
 
 6. Nama dan Motto
-    ```html
+```html
         <h2>SUSI</h2>
         <p class="motto">"Ngoding itu seni, error itu tradisi"</p>
         .motto {
@@ -81,12 +82,12 @@ Bagian kode CSS ini mengatur tampilan keseluruhan halaman melalui tag body. Prop
             margin: 10px 0 20px;
             color: #222;
         }
-    ```
+ ```
     
 .sidebar h2 menampilkan nama pengguna dengan margin rapi. .motto menampilkan kutipan/moto dengan font italic, ukuran kecil, dan warna gelap agar kontras dengan background pink.
 
 7. Bagian Kontak dan Hobi
-    ```html
+```html
         <div class="contact">
         <h3>Kontak</h3>
         <ul>
@@ -118,7 +119,8 @@ Bagian kode CSS ini mengatur tampilan keseluruhan halaman melalui tag body. Prop
             transform: translateX(6px);
             box-shadow: 0 3px 8px rgba(0,0,0,0.2);
         }
-    ```
+```
+
 Memanggil css dengan class,.contact dan .hobi menampilkan daftar kontak dan hobi secara rapi. List diatur tanpa bullet (list-style: none;), dengan padding dan margin minimal. Hover effect membuat elemen berubah warna, pindah sedikit ke kanan, dan menambahkan bayangan, sehingga interaktif.
 
 8. Bagian Sosial Media
