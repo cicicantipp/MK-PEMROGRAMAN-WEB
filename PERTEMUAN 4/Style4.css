@@ -1,0 +1,205 @@
+/* Transisi antar halaman */
+.page {
+  display: none;
+  animation: fade 0.6s ease-in-out;
+}
+.page.active {
+  display: block;
+}
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #000000, #330033);
+  color: #222;
+}
+
+/* HOME */
+.home-container {
+  text-align: center;
+  padding: 50px 20px;
+  animation: slideIn 1.5s ease-in-out;
+}
+.home-container h2 {
+  color: #ff69b4;
+  animation: fadeIn 2s ease-in-out;
+}
+.foto-home {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-top: 20px;
+  animation: bounce 3s infinite;
+}
+.menu-box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.card {
+  background: #ff0f93;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.card:hover {
+  background: #ff69b4;
+  transform: scale(1.1);
+}
+
+
+/* PORTOFOLIO */
+.container {
+  display: flex;
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.sidebar {
+  width: 35%;
+  background: #ff0f93;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.sidebar img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 10px;
+  animation: bounce 3s infinite;
+}
+.motto {
+  font-style: italic;
+  font-size: 14px;
+  margin: 10px 0 20px;
+  color: #222;
+}
+.main {
+  width: 65%;
+  padding: 20px;
+}
+.main h3 {
+  border-bottom: 2px solid #ff69b4;
+  padding-bottom: 5px;
+  color: #ff1493;
+}
+.section {
+  margin-bottom: 20px;
+}
+
+
+/* KONTAK & HOBI */
+.contact, .hobi {
+  text-align: left;
+  margin-top: 20px;
+}
+.contact ul, .hobi ul {
+  list-style: none;
+  padding: 0;
+}
+.contact ul li, .hobi ul li {
+  margin: 6px 0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.contact ul li:hover, .hobi ul li:hover {
+  background: #c60d73;
+  color: #000;
+  transform: translateX(6px);
+}
+
+
+/* SOSIAL MEDIA */
+.social-section {
+  margin-top: 25px;
+  text-align: center;
+}
+.social-section h3 {
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.social-buttons a {
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social-buttons a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.instagram { background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #b62121); }
+.github { background: #333; }
+.tiktok { background: linear-gradient(45deg, #69C9D0, #EE1D52, #000000); }
+
+/* GALERI */
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+.galeri img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.galeri img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/*tombol kembali*/
+.back-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 25px;
+  background: #ff0f93;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+/* ANIMASI */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}
+@keyframes slideIn {
+  from {opacity: 0; transform: translateY(50px);}
+  to {opacity: 1; transform: translateY(0);}
+}

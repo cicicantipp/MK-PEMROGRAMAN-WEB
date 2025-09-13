@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website CiciCantik</title>
+  <link rel="stylesheet" href="Style4.css">
+</head>
+<body>
+  <!-- HOME -->
+  <div id="home" class="page active">
+    <div class="home-container">
+      <h2>Hello, Welcome!</h2>
+      <img src="profilhome.jpg" alt="Foto Home" class="foto-home">
+      <div class="menu-box">
+        <div class="card" onclick="showPage('portofolio')">PORTOFOLIO</div>
+        <div class="card" onclick="showPage('galeri')">GALERI</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTOFOLIO -->
+  <div id="portofolio" class="page">
+    <div class="container">
+      <div class="sidebar">
+        <img src="inicici.jpg" alt="Foto Profil">
+        <h2>SUSI</h2>
+        <p class="motto">"Ngoding itu seni, error itu tradisi"</p>
+        
+
+        <div class="contact">
+          <h3>Kontak</h3>
+          <ul>
+            <li>📧 iniciciiww@gmail.com</li>
+            <li>📱 0813-5428-1882</li>
+          </ul>
+        </div>
+
+        <div class="hobi">
+          <h3>Hobi</h3>
+          <ul>
+            <li>📚 Membaca</li>
+            <li>🏃 Olahraga</li>
+          </ul>
+        </div>
+
+        <div class="social-section">
+          <h3>Sosial Media</h3>
+          <div class="social-buttons">
+            <a class="instagram" href="https://www.instagram.com/susiiayy?" target="_blank">Instagram</a>
+            <a class="github" href="https://github.com/cicicantipp" target="_blank">GitHub</a>
+            <a class="tiktok" href="https://www.tiktok.com/@iniciciwww" target="_blank">TikTok</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="section">
+          <h3>Tentang Saya</h3>
+          <p>
+            Saya adalah lulusan SMA yang memiliki ketertarikan besar dalam bidang IT. 
+            Walaupun saya baru mengenal pemrograman dan hal-hal lain yang berhubungan dengan IT, 
+            saya tetap berusaha untuk belajar dengan tekun. Dengan ketertarikan tersebut, 
+            saya bercita-cita untuk bisa berkontribusi  langsung di bidang IT di masa depan. 
+            Saat ini saya adalah mahasiswa UNM pada program studi Teknik Komputer untuk mewujudkan cita-cita tersebut.
+          </p>
+        </div>
+
+        <div class="section">
+          <h3>Data Pribadi</h3>
+          <p><b>Nama :</b> Susi</p>
+          <p><b>TTL :</b> Bantaeng, 08 Agustus 2006</p>
+          <p><b>Jenis Kelamin :</b> Perempuan</p>
+          <p><b>Status :</b> Mahasiswa</p>
+          <p><b>Alamat :</b> Jl.Poros Barua, Kab.Bantaeng, Sulawesi Selatan</p>
+        </div>
+
+        <div class="section">
+          <h3>Pendidikan</h3>
+          <p><b>2012 - 2018:</b> SD Inpres Taruttu Campaga</p>
+          <p><b>2018 - 2021:</b> MTSs Al Mansyur Biangloe</p>
+          <p><b>2021 - 2024:</b> SMAN 4 Bantaeng</p>
+        </div>
+      </div>
+    </div>
+    <button class="back-btn" onclick="showPage('home')">⬅ Kembali</button>
+  </div>
+
+  <!-- GALERI -->
+  <div id="galeri" class="page">
+    <div class="container">
+      <div class="main">
+        <h3>GALERI FOTO CICI</h3>
+        <div class="galeri">
+          <img src="galeri1.jpg" alt="Foto 1">
+          <img src="galeri2.jpg" alt="Foto 2">
+          <img src="galeri3.jpg" alt="Foto 3">
+          <img src="galeri4.jpg" alt="Foto 4">
+        </div>
+      </div>
+    </div>
+     <button class="back-btn" onclick="showPage('home')">⬅ Kembali</button>
+  </div>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll(".page").forEach(function(page) {
+        page.classList.remove("active");
+      });
+      document.getElementById(pageId).classList.add("active");
+    }
+  </script>
+</body>
+</html>
