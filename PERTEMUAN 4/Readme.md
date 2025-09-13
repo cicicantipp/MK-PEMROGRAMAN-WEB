@@ -1,6 +1,6 @@
 # ANALISIS 
 1. Biografi Update (MODUL 4)
-    **CSS**
+ **CSS**
  ```html   
         border-radius: 50px;
         border: 4px solid #c60d73; 
@@ -11,17 +11,17 @@
 ```
 Penambahan border-radius: 50px; membuat sudut gambar membulat sehingga terlihat lebih halus, sedangkan border: 4px solid #c60d73; menambahkan garis tepi berwarna pink tua dengan ketebalan 4 piksel. margin-bottom: 10px; memberi jarak ke bawah agar gambar tidak terlalu rapat dengan elemen di bawahnya. animation: bounce 3s infinite; memberikan efek animasi pantulan (naik-turun) yang berjalan terus-menerus setiap 3 detik. opacity: 0.8; membuat gambar agak transparan dengan tingkat kejernihan 80%. Terakhir, transition: opacity 0.5s ease, transform 0.3s ease; memastikan perubahan pada tingkat transparansi dan ukuran gambar berjalan secara halus ketika gambar diberi aksi seperti hover.
 
- ```html
+```html
      .sidebar img:hover 
       opacity: 1.0; 
       transform: scale(1.05);
       border: 4px solid #ff69b4;
-    ```
+```
 Kode ini mengatur efek ketika gambar pada bagian .sidebar diarahkan kursor (hover). opacity: 1.0; membuat gambar menjadi sepenuhnya jelas tanpa transparansi. transform: scale(1.05); memperbesar gambar sedikit (5%) sehingga terlihat menonjol. Sedangkan border: 4px solid #ff69b4; mengganti warna garis tepi menjadi pink cerah ketika gambar disentuh kursor.
 
 2. Biografi Update (MODUL 5)
-    **Index.html**
- ```html
+**Index.html**
+```html
         <script>
             function showPage(pageId) {
              document.querySelectorAll(".page").forEach(function(page) {
@@ -34,7 +34,7 @@ Kode ini mengatur efek ketika gambar pada bagian .sidebar diarahkan kursor (hove
 
 Kode JavaScript showPage() digunakan untuk mengatur perpindahan antarhalaman dalam website agar tampilan lebih dinamis dan tidak perlu memuat ulang seluruh halaman. Ketika fungsi ini dipanggil dengan parameter berupa id halaman yang dituju, pertama-tama sistem akan mencari semua elemen yang memiliki class page. Kemudian, setiap halaman tersebut akan dihapus status aktifnya dengan cara menghilangkan class active, sehingga halaman tersebut otomatis tersembunyi dari layar. Setelah itu, fungsi akan mencari elemen dengan id sesuai parameter yang dipanggil, lalu memberinya class active agar halaman tersebut ditampilkan kembali. Dengan cara ini, hanya satu halaman yang terlihat pada satu waktu, misalnya ketika pengguna menekan tombol menuju Portofolio atau Galeri, maka halaman Home akan hilang, dan hanya halaman yang dipilih yang akan tampil. Mekanisme ini membuat pengalaman pengguna lebih interaktif karena halaman bisa berganti secara halus tanpa perlu melakukan reload seluruh website.
 
- **Style4.css**
+**Style4.css**
 ```html
  .page {
         display: none;
