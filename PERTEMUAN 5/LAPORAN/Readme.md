@@ -1,6 +1,6 @@
 # Analisis 
 **2. JavaScript pada file HTML**
-**a. Menggunakan tag script
+ **a. Menggunakan tag script
  ```html
         <HTML>
         <HEAD>
