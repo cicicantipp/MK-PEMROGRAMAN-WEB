@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hitung Bangun Ruang</title>
+</head>
+<body>
+    <h2>Volume Kubus</h2>
+    <input id="sisi" type="number">
+    <button onclick="document.getElementById('vk').innerText=Math.pow(sisi.value,3)">Hitung</button>
+    <p>Hasil: <span id="vk"></span></p>
+
+    <h2>Volume Balok</h2>
+    <input id="p" type="number" placeholder="Panjang"><br>
+    <input id="l" type="number" placeholder="Lebar"><br>
+    <input id="t" type="number" placeholder="Tinggi"><br>
+    <button onclick="document.getElementById('vb').innerText=p.value*l.value*t.value">Hitung</button>
+    <p>Hasil: <span id="vb"></span></p>
+
+    <h2>Volume Tabung</h2>
+    <input id="r" type="number" placeholder="Jari-jari"><br>
+    <input id="tt" type="number" placeholder="Tinggi"><br>
+    <button onclick="document.getElementById('vt').innerText=(Math.PI*r.value*r.value*tt.value).toFixed(2)">Hitung</button>
+    <p>Hasil: <span id="vt"></span></p>
+  </body>
+</html>
