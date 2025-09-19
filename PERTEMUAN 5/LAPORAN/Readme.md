@@ -1,6 +1,6 @@
 # Analisis 
 **2. JavaScript pada file HTML**
- **a. Menggunakan tag script
+ **a. Menggunakan tag script**
  ```html
         <HTML>
         <HEAD>
@@ -20,13 +20,13 @@
 Kode HTML tersebut menampilkan tulisan dari JavaScript menggunakan document.write(). Pada bagian head, JavaScript menuliskan teks “Program JavaSript Aku di kepala”, lalu pada bagian body, JavaScript kembali menuliskan teks “Program JavaSript Aku di body”. Karena keduanya menggunakan document.write(), hasil akhirnya di browser adalah kedua teks itu muncul berurutan sesuai urutan script dituliskan dalam file HTML.
 
 **b. Menggunakan file eksternal**
-    ```html
+```html
         <SCRIPT LANGUAGE=Javascript SRC=url/file.js> </SCRIPT>
 ```  
 Baris ini digunakan untuk memanggil file JavaScript eksternal. Artinya, Anda bisa menaruh kode JavaScript di luar file HTML (misalnya file.js), lalu menyambungkannya ke HTML menggunakan atribut SRC. Dengan begitu, kode lebih rapi, terpisah, dan mudah dikelola.
 
 **c. Event Tertentu**
-    ```html
+ ```html
         <!DOCTYPE html>
         <html>
             <head>
