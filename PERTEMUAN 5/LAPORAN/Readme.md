@@ -96,6 +96,7 @@ Nilai yang dimasukkan pengguna kemudian disimpan dalam variabel nama.
 Setelah itu, document.write("Hai, " + nama); menampilkan sapaan di halaman web, misalnya jika pengguna mengetik cici, maka hasilnya: Hai cici
 
 **4. Jendela Peringatan dan Konfirmasi**
+
 **4.1**
 ```html
      <HTML>
@@ -136,6 +137,7 @@ Baris ini menampilkan kotak dialog konfirmasi dengan pesan “Apakah anda sudah 
 document.write("Jawaban Anda: " + jawaban); menampilkan hasil pilihan pengguna di halaman web. Jadi, yang akan tampil adalah “Jawaban Anda: true” jika menekan OK, atau “Jawaban Anda: false” jika menekan Cancel.
 
 **5. Variabel**
+
 **5.a**
 ```html
         <script language="JavaScript">
