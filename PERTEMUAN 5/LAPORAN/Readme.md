@@ -1,5 +1,6 @@
 # ANALISIS 
 **2. JavaScript pada file HTML**
+
 **a. Menggunakan tag script**
  ```html
         <HTML>
@@ -167,7 +168,7 @@ Pertama, dibuat variabel kosong dengan nama IniVariabel. Lalu, dibuat variabel k
             document.write("Nilai dari a adalah " + a);
         </SCRIPT>
 ```
-![alt text](5.b%20global.pngb)
+![alt text](5.b%20global.png)
 
 Pertama, dibuat dua variabel: a = 12 dan b = 4.
 Lalu ada sebuah fungsi bernama Perkalian_Dengan2(b). Fungsi ini menerima parameter b, menghitung b * 2, lalu menyimpannya ke variabel a, dan mengembalikan (return) hasilnya. document.write("Dua kali dari " + b + " adalah " + Perkalian_Dengan2(b)); akan menampilkan teks “Dua kali dari 4 adalah 8”, karena fungsi Perkalian_Dengan2(4) menghasilkan 8. document.write("Nilai dari a adalah " + a);
@@ -460,6 +461,7 @@ Fungsi hitung kemudian mengambil nilai dari kedua input dengan document.getEleme
         </html>
 ```
 ![alt text](T4.png)
+
 Volume Kubus
 
 Input: panjang sisi kubus.
