@@ -176,7 +176,7 @@
       <div class="absolute inset-0 bg-black/50"></div>
       <div class="relative z-10 text-center max-w-2xl px-6">
         <img src="images/slogan.png" alt="Kopi Can Logo" class="mx-auto mb-6 w-40">
-        <h2 class="text-3xl md:text-5xl font-bold leading-snug">“Charge your mood and say <span class="text-yellow-400">AAGHH</span>”</h2>
+        <h2 class="text-3xl md:text-5xl font-bold leading-snug">“Charge your mood and say <span class="text-yellow-400">AAGHHH</span>”</h2>
       </div>
     </section>
   </section>
