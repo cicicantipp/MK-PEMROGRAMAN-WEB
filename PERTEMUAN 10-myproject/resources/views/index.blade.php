@@ -67,7 +67,7 @@
   </nav>
 
   <section id="home" class="slide active">
-    <section class="min-h-screen flex flex-col justify-center items-center text-center bg-[url('latar.jpg')] bg-cover bg-center relative">
+    <section class="min-h-screen flex flex-col justify-center items-center text-center bg-[url('images/latar.jpg')] bg-cover bg-center relative">
       <div class="absolute inset-0 bg-black/50"></div>
       <div class="relative z-10 px-6">
         <div class="w-32 h-31 rounded-full overflow-hidden border-4 border-white shadow-lg mx-auto">
